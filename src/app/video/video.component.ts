@@ -14,7 +14,7 @@ export class VideoComponent implements OnInit {
   @Input() public id : string;
   @Input() public title : string;
   @Input() public thumbnail : string;
-  @Input() public createdOn : string;
+  @Input() public createdOn : number;
   @Input() public avatar : string;
   @Input() public author : string;
   @Input() public views : number;

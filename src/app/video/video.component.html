@@ -9,7 +9,7 @@
             <div class="author-name">{{author}}</div>
         </div>
         <div class="attributes">
-            <p><span class="fade">Posted on </span><span>{{createdOn | date: 'yyyy-MM-dd'}}</span></p>
+            <p><span class="fade">Posted on </span><span>{{createdOn*1000 | date: 'yyyy-MM-dd'}}</span></p>
             <p><span class="fade">Views </span><span>{{views}}</span></p>
         </div>
         <div *ngIf="showAddToPlaylist===true">
