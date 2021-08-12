@@ -1,0 +1,20 @@
+<div class="video">
+    <div class="thumbnail">
+        <img src="{{thumbnail}}"/>
+    </div>
+    <div class="content">
+        <h3 class="title"><a href="https://www.dailymotion.com/video/{{id}}" target="_blank">{{title}}</a></h3>
+        <div class="author">
+            <div class="author-avatar"><img src="{{avatar}}"/></div>
+            <div class="author-name">{{author}}</div>
+        </div>
+        <div class="attributes">
+            <p><span class="fade">Posted on </span><span>{{createdOn | date: 'yyyy-MM-dd'}}</span></p>
+            <p><span class="fade">Views </span><span>{{views}}</span></p>
+        </div>
+        <div *ngIf="showAddToPlaylist===true">
+            <button *ngIf="!alreadyInPlaylist" (click)="addToPlaylist()">Add to playlist</button>
+            <button *ngIf="alreadyInPlaylist" disabled>Already in playlist</button>
+        </div>
+    </div>
+</div>

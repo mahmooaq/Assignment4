@@ -1,0 +1,16 @@
+<ng-container>
+    <div>
+        <div *ngIf="dataList.length">
+            <app-video *ngFor="let listing of dataList" 
+                [id]="listing.id"
+                [title]="listing.title"
+                [thumbnail]="listing.thumbnail_360_url"
+                [createdOn]="listing.created_time"
+                [avatar]="listing['owner.avatar_80_url']"
+                [author]="listing['owner.username']"
+                [views]="listing.views_total"
+                [showAddToPlaylist]="showAddToPlaylist">
+            </app-video>
+        </div>
+    </div>
+</ng-container>

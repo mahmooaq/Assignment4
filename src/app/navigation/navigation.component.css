@@ -1,0 +1,22 @@
+/*CSS for navigation component*/
+header {
+    text-align: center;
+}
+
+header .logo {
+    width:320px;
+    height:auto;
+}
+
+header nav a {
+    margin:0 20px;
+    font-size:22px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    transition:color 0.2s;
+}
+
+header nav a.active, header nav a:hover {
+    color:#00CDFF;
+}

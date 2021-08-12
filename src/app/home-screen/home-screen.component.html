@@ -1,0 +1,5 @@
+<div class="search">
+    <input (keyup)="updateKeywords($event)" type="text" placeholder="Search for a video..."/>
+    <button (click)="getVideos($event)" formtarget="_blank">Get Videos</button>
+</div>
+<app-listing [dataList]="searchResults" [showAddToPlaylist]="true"></app-listing>
